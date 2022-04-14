@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:200,300,400,500,600,700,900");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --bg-color: #111;
+  --linkedIn: #007bb6;
+  --facebook: #3b5998;
+  --twitter: #00aced;
+  --pinterest: #cb2027;
+  --youtube: #bb0000;
+  --instagram: #bc2a8d;
+  --wordpress: #21759b;
+  --myRed: #f44336;
+  --myRed2: #d94631;
+  --pinkRed: #c92432;
+  --canvasRed: #923d41;
+  --myBlue: #1c8adb;
+  --myBluee: #3bbced;
+  --myGreen: #39dc79;
+  --w3Green: #4caf50;
+  --microsoftGreen: #008272;
+  --microsoftRed: #911844;
+  --microsoftDarblue: #3f4b61;
+  --dcodeGreen: #009879;
+  --myDark1: #111;
+  --myDark2: #222;
+  --myDark3: #333;
+  --myGrey: #ddd;
+  --lightCharcoal: #727272;
+  --deepCharcoal: #141414;
+  --travisYellow: #ff9800;
+  --travisYellow2: #f88f00;
+  --brightYellow: #ffc600;
+  --nnnYellow: #ffae00;
+  --travisBlue: #2196f3;
+  --udemyBlue: #0f7c90;
+  --travisGreen: #8bc34a;
+  --travisPink: #e91e63;
+  --travisBleu: #009688;
+  --myBlack: rgba(13, 12, 14, 1);
+  --lightenedBlack: #1f1c21;
+  --lightPurple: #302d43;
+  --coolPurple: #533872;
+  --darkPurple: #282639;
+  --neonGreen: #92cf48;
+  --lightGrey: #f4f6f9;
+  --darkGrey: #eaedf3;
+  --deepGrey: #717171;
+  --lighterGrey: #f1f1f1;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Small (sm) devices (landscape phones, 567px and up) */
+@media screen and (min-width: 568px) {
+  :root {
+    --bg-color: #222;
+    font-size: 22px;
+  }
+}
+
+/* Medium (md) devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  :root {
+    --bg-color: #333;
+    font-size: 24px;
+  }
+}
+
+/* Large (lg) devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  :root {
+    --bg-color: violet;
+    font-size: 30px;
+  }
+}
+
+/* Extra (xl) devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  :root {
+    --bg-color: violet;
+    font-size: 40px;
+  }
+}

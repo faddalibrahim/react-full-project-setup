@@ -1,4 +1,10 @@
+//libraries
 import React from "react";
+
+// styles
+import appStyles from "scss/app.module.scss";
+
+// redux
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "redux/slices/counterSlice";
 
@@ -7,20 +13,21 @@ function App() {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className={appStyles.app}>
+      <p>Ready to Redux</p>
       <div>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          Increment
-        </button>
-        <span>{count}</span>
         <button
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
-          Decrement
+          -
+        </button>
+        <span>{count}</span>
+        <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
+        >
+          +
         </button>
       </div>
     </div>

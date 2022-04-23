@@ -1,36 +1,23 @@
 //libraries
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// styles
-import appStyles from "scss/app.module.scss";
-
-// redux
-import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "redux/slices/counterSlice";
+// pages
+import Playground from "pages/playground/Playground";
+import Error404Svg from "pages/errors/Error404/Error404Svg";
+import ErrorBoundary from "pages/errors/ErrorBoundary/ErrorBoundary";
 
 function App() {
-  const count = useSelector((state) => state.counter.count);
-  const dispatch = useDispatch();
-
   return (
-    <div className={appStyles.app}>
-      <p>Ready to Redux</p>
+    <Router>
       <div>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          -
-        </button>
-        <span>{count}</span>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          +
-        </button>
+        <Routes>
+          <Route path="/" element={<Playground />} />
+          <Route path="/error-boundary" element={<ErrorBoundary />} />
+          <Route path="*" element={<Error404Svg />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

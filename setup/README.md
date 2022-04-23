@@ -71,6 +71,7 @@ import { debounce } from "utils/debounce.js";
 - [x] css variables
 - [x] resets
 - [x] media queries
+- [x] custom scrollbar
 
 **.env**
 
@@ -103,6 +104,26 @@ GENERATE_SOURCEMAP=false
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 :root {

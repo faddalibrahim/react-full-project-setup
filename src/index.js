@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 
 // components
 import App from "./App";
+import ErrorBoundary from "pages/errors/ErrorBoundary/ErrorBoundary";
 
 // styles
 import "scss/index.scss";
@@ -19,7 +20,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
     </Provider>
   </React.StrictMode>
 );

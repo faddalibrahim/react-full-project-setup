@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // pages
 import Playground from "pages/playground/Playground";
-import Error404Svg from "pages/errors/Error404/Error404Svg";
-import ErrorBoundary from "pages/errors/ErrorBoundary/ErrorBoundary";
+import Error404 from "pages/errors/Error404/Error404";
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Playground />} />
-          <Route path="/error-boundary" element={<ErrorBoundary />} />
-          <Route path="*" element={<Error404Svg />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </Router>

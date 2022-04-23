@@ -9,12 +9,10 @@ import Error404 from "pages/errors/Error404/Error404";
 function App() {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<Playground />} />
-          <Route path="*" element={<Error404 />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Playground />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
     </Router>
   );
 }

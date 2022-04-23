@@ -1,0 +1,13 @@
+.errorBoundary {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+
+  svg {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}

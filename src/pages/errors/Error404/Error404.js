@@ -9,6 +9,7 @@ import error404Styles from "./error404.module.scss";
 
 const Error404 = (props) => {
   const params = useParams();
+  console.log(apple);
   return (
     <div className={error404Styles.error404}>
       <center>

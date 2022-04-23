@@ -2,6 +2,9 @@ import React, { Component } from "react";
 
 import ErrorBoundarySvg from "./ErrorBoundarySvg";
 
+// styles
+import errorBoundaryStyles from "./errorboundary.module.scss";
+
 export default class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +28,14 @@ export default class ErrorBoundary extends Component {
 
   render() {
     if (this.state.hasError) {
-      return <ErrorBoundarySvg />;
+      return (
+        <div className={errorBoundaryStyles.errorBoundary}>
+          <center>
+            <ErrorBoundarySvg />
+            <small>something went wrong</small>
+          </center>
+        </div>
+      );
     }
     return this.props.children;
   }

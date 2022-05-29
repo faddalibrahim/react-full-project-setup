@@ -10,12 +10,23 @@
 - environment variables
 - kanban boards
 - dev branch
-- github actions
+- github actions (for automated cypress testing)
 
 **ui/ux**
 
 - figma
 - storybook
+
+**ui elements**
+- gradients
+- shadows
+- skews/curves
+- shapes
+
+**utils**
+- debounce
+- throttle
+- validator
 
 **files**
 
@@ -32,11 +43,12 @@ import "css/index.scss";
 // utils
 import { debounce } from "utils/debounce.js";
 
-/**
-* * Playgound.js or Sandbox.js for testing/playing
-* * Setup Error Boundary
-* /
 ```
+
+- [x] playground.js or sandbox.js
+- [x] error boundary
+- [ ] error logging ( sentry )
+- [ ] cypress testing
 
 **libraries**
 
@@ -46,6 +58,7 @@ import { debounce } from "utils/debounce.js";
 - [ ] prop types
 - [ ] material-ui
 - [ ] material-ui icons
+- [ ] google material icons setup
 - [x] redux
 - [x] react-redux
 - [x] redux-thunk
@@ -71,7 +84,13 @@ import { debounce } from "utils/debounce.js";
 - [x] css variables
 - [x] resets
 - [x] media queries
-- [x] custom scrollbar
+- [x] custom scrollbar  
+
+
+**fonts**
+- [x] google sans
+- [x] quicksand
+- [x] poppins
 
 **.env**
 
